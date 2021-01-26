@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+}
+  
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #999999;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    position: fixed;
+    top: 0;
+    right: 10px;
+    /* text-align: right; */
+    /* width: 100%; */
+}
+
+.circles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    background: white;
+    border-radius: 50%;
+    line-height: 0;
+    text-align: center;
+    vertical-align: center;
+    padding: 50px 0;
+    width: 100px;
+    transition: transform 2s ease-in-out;
+}
+
+.move-circles {
+    transform: translateY(100%) scale(2);
+}
